@@ -10,9 +10,12 @@ var webdriver = require('selenium-webdriver'),
     runner = require('../lib/runner'),
     reporter = require('../lib/reporter'),
     Mocha = require('mocha'),
+    mochaAsPromised = require('mocha-as-promised'),
     path = require('path'),
     Module = require('module'),
     expect = require('expect.js');
+
+mochaAsPromised(Mocha);
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('mochaProtractor', 'Run e2e angular tests with webdriver.', function() {
