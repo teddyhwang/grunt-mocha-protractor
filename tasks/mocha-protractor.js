@@ -13,7 +13,8 @@ var webdriver = require('selenium-webdriver'),
     mochaAsPromised = require('mocha-as-promised'),
     path = require('path'),
     Module = require('module'),
-    expect = require('expect.js');
+    chai = require('chai'),
+    chaiAsPromised = require('chai-as-promised')
 
 mochaAsPromised(Mocha);
 
