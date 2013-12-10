@@ -25,6 +25,8 @@ module.exports = function(grunt) {
           browsers: ['Chrome'],
           reporter: 'Spec',
           baseUrl : '',
+          netloc: '',
+          lcpUrl: '',
           args: null,
 
           // saucelabs options
