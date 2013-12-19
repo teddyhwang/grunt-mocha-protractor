@@ -25,8 +25,8 @@
   "dependencies": {
     "mocha": "~1.13.0",
     "mocha-as-promised": "~1.4.0",
-    "selenium-webdriver": "~2.35.1",
-    "protractor": "~0.12.0"
+    "selenium-webdriver": "~2.37",
+    "protractor": "~0.14.0"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
