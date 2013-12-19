@@ -1,6 +1,6 @@
 /*
  * grunt-mocha-protractor
- * https://github.com/aeh/grunt-mocha-protractor
+ * https://github.com/noblesamurai/grunt-mocha-protractor
  */
 
 'use strict';
@@ -24,14 +24,16 @@ module.exports = function(grunt) {
         options = this.options({
           browsers: ['Chrome'],
           reporter: 'Spec',
-          baseUrl : '',
-          netloc: '',
-          lcpUrl: '',
           args: null,
 
           // saucelabs options
           sauceUsername: process.env.SAUCE_USERNAME,
-          sauceAccessKey: process.env.SAUCE_ACCESS_KEY
+          sauceAccessKey: process.env.SAUCE_ACCESS_KEY,
+
+          // protractor config
+          baseUrl: '',
+          rootElement: '',
+          params: {}
         });
 
     // wrap reporter
